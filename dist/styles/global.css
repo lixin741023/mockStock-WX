@@ -1,0 +1,647 @@
+/*phoneLogin:手机号登录*/
+.phoneLogin{}
+.phoneLogin .title{
+	height: 0.46rem;
+	line-height: 0.46rem;
+	background-color: #2f2f2f;
+	text-align: center;	
+	color: #fff;
+	font-size: 0.16rem;
+}
+.phoneLogin .box{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.phoneLogin .box img{
+	width: 0.9rem;
+	height: 0.9rem;
+	margin-top: 0.2rem;
+}
+.phoneLogin .box input{
+	margin-top: 0.25rem!important;
+	padding-bottom: 0.05rem!important;
+	border: 0; 
+	text-align: center;
+	font-size: 0.15rem;
+	border-bottom: 1px solid #d5d3d4;
+	letter-spacing: 1px;
+	width: 70%;
+	font-family: "微软雅黑";
+	background-color: #efeff4;
+	color: #333;
+}
+.phoneLogin .box .btn{
+	margin-top: 0.23rem;
+	width: 70%;
+	font-size: 0.12rem;
+	padding: 0.1rem 0;
+	color: #fff;
+	text-align: center;	
+	border-radius: 0.5rem;
+	background-color: #ce142c;
+}
+
+/*message:短信验证*/
+.message{}
+.message .messageList{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1rem;
+	padding: 0 0.16rem;
+}
+.message .messageList input{
+	width: 0.47rem;
+	text-align: center;
+	background-color: transparent;
+	border: 0;
+	border-radius: 0;
+	font-size: 0.29rem;
+	color: #6D6D72;
+	border-bottom: 1px solid #999999;
+	padding-bottom: 5px!important;
+}
+.message .box{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.message .box .tip{
+	margin-top: 0.16rem!important;
+	font-size: 0.14rem;
+	color: #6D6D72;
+}	
+.message .box .btn{
+	margin-top: 0.21rem;
+	width: 70%;
+	font-size: 0.12rem;
+	padding: 0.1rem 0;
+	color: #fff;
+	text-align: center;	
+	border-radius: 0.5rem;
+	background-color: #ce142c;
+}
+.message .box .btnCD{
+	background-color: #A2A2A2;
+}
+.checking{
+	display: none;
+	position: fixed;
+	z-index: 3;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color:rgba(10,10,10,0.2);
+	text-align: center;
+}
+.checking img{
+	width: 0.48rem;
+	height: 0.48rem;
+	margin-top: 3rem;
+}
+/*teachers:导师分享*/
+.teachersList{
+	display: flex;
+	align-items: center;
+	list-style: none;
+	padding: 0.25rem 0.1rem 0.08rem;
+	border-bottom: 1px solid #e0dedf;
+}
+.teachersList_ranking{}
+.teachersList_ranking img{
+	width: 0.22rem;
+}
+.teachersList_ranking div{
+	width: 0.22rem;
+	text-align: center;
+	font-size: 0.15rem;	
+}
+.teachersList_{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+	margin-left: 0.08rem;
+	width: 0.8rem;
+	height: 0.8rem;
+}
+.teachersList_ .myTeacher{
+	position: absolute;
+	top: -0.15rem;
+	width: 0.6rem;
+}
+.teachersList_ .headImg{
+	width: 0.7rem;
+	border-radius: 50%;
+}
+.teachersList_info{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-left: 0.08rem;
+	width: 2rem;
+	height: 0.8rem;
+	padding: 0.1rem 0;
+}
+.teachersList_info h6{
+	font-size: 0.18rem;
+	color: #333;
+	font-weight: bold;
+}
+.teachersList_info p{
+	font-size: 0.1rem;
+	width: 90%;
+}
+.teachersList_percent{
+	margin-left: 0.08rem;
+	display: inline-block;
+	padding: 0.1rem 0.2rem;
+	background-color: #cd402e;
+	color: #fff;
+	font-size: 0.13rem;
+	border-radius: 10px;
+	font-weight: bold;
+}
+.notMyTeachers{
+	display: none;
+	position: fixed;
+	z-index: 6;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background-color: rgba(2,2,2,.7);
+	color: #fff;
+}
+.notMyTeachers .notMyTeachersTip{
+	width: 2.5rem;
+	display: flex;
+	flex-direction: column;
+	margin: 2rem auto 0;
+}
+.notMyTeachers .notMyTeachersTip .row1{
+	height: 0.25rem;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.13rem;
+	background-color: #3a3a3a;
+	border-top-left-radius: 0.1rem;
+	border-top-right-radius: 0.1rem;
+}
+.notMyTeachers .notMyTeachersTip .row1 span:nth-child(2){
+	font-size: 0.2rem;
+	position: absolute;
+	right: 0.05rem;
+}
+.notMyTeachers .notMyTeachersTip .row2{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 0.7rem;
+	font-size: 0.16rem;
+	background-color: #AEAEAE;
+	border-bottom-left-radius: 0.1rem;
+	border-bottom-right-radius: 0.1rem;
+	color: #cd402e;
+}
+
+/*teachersDetail:导师操盘详情*/
+.teachersDetail{}
+.teachersDetail_title{
+	display: flex;
+	align-items: center;
+/*	position: relative;*/
+	position: fixed;
+	width: 100%;
+	min-width: 360px;
+	max-width: 1024px;
+	z-index: 5;
+	justify-content: center;
+	height: 0.4rem;
+	background-color: #0faef0;
+	color: #fff;
+	border-bottom: 1px solid #56ccfb;
+}
+.teachersDetail_title a:nth-child(1){
+	position: absolute;
+	left: 0.1rem;
+	font-size: 0.2rem;
+	color: #fff;
+}
+.teachersDetail_title span:nth-child(2){
+	font-size: 0.2rem;
+}
+.teachersDetail_info{
+	background-color: #0faef0;
+	padding: 1px 0.2rem;
+	border-bottom: 1px solid #56ccfb;
+}
+.teachersDetail_info .fourBlock{
+	margin-top: 0.16rem;
+	margin-bottom: 0.16rem;
+	display: flex;
+	justify-content: space-between;
+}
+.teachersDetail_info .fourBlock .fourBlock_info{
+	padding: 3.5px 10px;
+	width: 1.6rem;
+	background-color: #5ccbf9;
+	color: #fff;
+	font-size: 0.13rem;
+}
+.teachersDetail_info .income{
+	color: #fff;
+	font-size: 0.15rem;
+}
+.teachersDetail_info .income div{
+	font-size: 0.13rem;
+}
+.teachersDetail_info .income p{
+	display: inline-block;
+	margin-top: 0.04rem!important;
+	margin-bottom: 0.04rem!important;
+	font-size: 0.4rem;
+	margin-right: 5px!important;
+	font-family: fantasy;
+}
+.teachersDetail .ranking{
+	padding: 0.1rem 0.22rem;
+	display: flex;
+	color: #fff;
+	background-color: #0faef0;
+}
+.teachersDetail .ranking .item1{
+	font-size: 0.15rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-right: 0.3rem;
+}
+.teachersDetail .ranking .item1 span:nth-child(2){margin-top: 0.075rem;}
+.teachersDetail .ranking .item2{
+	position: relative;
+	margin-left: 0.15rem;
+}
+.teachersDetail .ranking .item2 div:nth-child(1){
+	font-size: 0.15rem;
+}
+.teachersDetail .ranking .item2 div:nth-child(2){
+	font-size: 0.28rem;
+	letter-spacing: 3px;
+	font-family: cursive;
+	font-weight: bold;
+	margin-left: -0.05rem;
+	margin-top: 0.075rem;
+}
+.teachersDetail .ranking .item2 img{
+	position: absolute;
+	left: 0.75rem;
+	top: 0.03rem;
+	width: 0.35rem;
+}
+.teachersDetail_inCome img{
+	width: 100%;
+}
+/*Chicang:当前持仓*/
+.Chicang{}	
+.Chicang .title{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	letter-spacing: 1px;
+	font-size: 0.16rem;			
+	background-color: #d3d3d3;
+	padding: 0.075rem 0.15rem;
+	color: #333;
+	border-bottom: 1px solid #cbc;
+}
+.Chicang .title a:nth-child(2){
+	color: #333;
+	font-size: 0.12rem;
+}
+.ChicangList{
+	padding: 0.17rem 0.2rem 0.17rem 0.4rem;
+	background-color: #fff;
+	border-radius: 0.08rem;
+	margin-bottom: 0.1rem;
+}
+.ChicangList .stockTitle{
+	color: #000;
+	font-size: 0.13rem;
+	font-weight: bold;
+}
+.ChicangList .row{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 0.2rem;	
+}
+.ChicangList .item{
+	font-size: 0.13rem;
+	display: inline-block;
+}
+.ChicangList .item span:nth-child(1){
+	display: inline-block;
+	width: 0.6rem;
+	color: #747474;	
+}
+.ChicangList .item span:nth-child(2){
+	display: inline-block;
+	width: 0.72rem;
+}
+.ChicangList .item_last{
+	font-size: 0.13rem;
+	display: inline-block;	
+}
+.ChicangList .item_last span:nth-child(1){
+	display: inline-block;
+	width: 0.6rem;
+	color: #747474;	
+}
+.ChicangList .item_last span:nth-child(2){
+	display: inline-block;	
+}
+.ChicangList .item_last div{
+	margin-left: 0.05rem;
+	display: inline-block;
+	border-radius: 8px;
+	padding: 0.04rem 0.08rem;	
+}
+.up_number{color: #cd402e;}/**/
+.up_percent{background-color: #cd402e;color: #fff;}/**/
+.down_number{color: #05c17d;}/**/
+.down_percent{background-color: #05c17d; color: #fff;}/**/
+/*Tiaocang:最新调仓*/
+.Tiaocang{}
+.Tiaocang .title{
+	border-bottom: 1px solid #cbc;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	letter-spacing: 1px;
+	font-size: 0.16rem;			
+	background-color: #d3d3d3;
+	padding: 0.075rem 0.15rem;
+	color: #333;
+}
+.Tiaocang .title a:nth-child(2){
+	font-size: 0.12rem;
+	color: #333;
+}
+.TiaocangList{
+	position: relative;
+	padding: 0.17rem 0.2rem 0.17rem 0.4rem;
+	background-color: #fff;
+	border-radius: 0.08rem;
+	margin-bottom: 0.1rem;
+}
+.TiaocangList .stockTitle{
+	color: #333;
+	font-size: 0.13rem;
+	font-weight: bold;
+}
+.TiaocangList .model{
+	position: absolute;
+	width: 0.25rem;
+	height: 0.25rem;
+	font-size: 0.13rem;
+	left: 0.1rem;
+	top: 0.12rem;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.TiaocangList .model_buy{/**/
+	background-color: #cd402e;
+	color: #fff;	
+}
+.TiaocangList .model_sell{/**/
+	background-color: #0e82d7;
+	color: #fff;
+}
+.TiaocangList .change_buy{/**/
+	color: #cd402e;
+}
+.TiaocangList .change_sell{/**/
+	color: #0e82d7;
+}
+.TiaocangList .row{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 0.2rem;	
+}
+.TiaocangList .item{
+	font-size: 0.13rem;
+	display: inline-block;
+}
+.TiaocangList .item span:nth-child(1){
+	display: inline-block;
+	width: 0.6rem;
+	color: #747474;	
+}
+.TiaocangList .item span:nth-child(2){
+	display: inline-block;
+	width: 0.72rem;
+}
+.TiaocangList .item_last{
+	font-size: 0.13rem;
+	display: inline-block;
+}
+.TiaocangList .item_last>span:nth-child(1){
+	display: inline-block;
+	width: 0.6rem;
+	color: #747474;
+}
+.TiaocangList .item_last span:nth-child(2){
+	display: inline-block;
+}
+.TiaocangList .item_last div{
+	display: inline-block;
+}
+.TiaocangList .item_last div span{
+	font-size: 0.13rem!important;
+	font-weight: bold;
+}
+/*老师点评*/
+.teacherComment{}
+.teacherComment .title{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	letter-spacing: 1px;
+	font-size: 0.16rem;			
+	background-color: #d3d3d3;
+	padding: 0.075rem 0.15rem;
+	color: #000;
+	border-bottom: 1px solid #cbc;
+}
+.teacherCommentList{
+	padding: 0.17rem 0.2rem;
+	border-bottom: 0.05rem solid #D3D3D3;
+}
+.teacherCommentList .info{
+	display: flex;
+}
+.teacherCommentList .info img{
+	width: 0.38rem;
+	height: 0.38rem;
+	border-radius: 50%;
+}
+.teacherCommentList .info div{
+	margin-left: 0.1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.teacherCommentList .info div span:nth-child(1){
+	font-size: 0.14rem;
+}
+.teacherCommentList .info div span:nth-child(2){
+	font-size: 0.11rem;
+	color: #969696;
+}
+.teacherCommentList P{
+	margin-top: 0.13rem!important;
+	font-size: 0.125rem;
+}
+
+/*mine:我的*/
+.mine{}
+.mine .top{
+	font-size: 0.15rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 0.42rem 0.33rem;
+	color: #fff;
+	background-color: #464646;
+}
+.mine .top img{
+	width: 0.73rem;
+	height: 0.73rem;
+	border-radius: 50%;
+}
+.mine .top >span{margin-top: 0.09rem;}
+.mine .top >div{margin-top: 0.06rem;}
+.mineList{
+	position: relative;
+	border-bottom: 1px solid #9a9899;
+	padding: 0.11rem 0.24rem;
+	display: flex;
+	align-items: center;
+}
+.mineList .newMessage{
+	position: absolute;
+	display: flex;
+	justify-content: center;	
+	align-items: center;
+	width: 0.17rem;
+	height: 0.17rem;
+	background-color: #cd142d;
+	font-size: 0.1rem;
+	border-radius: 50%;
+	color: #fff;
+	left: 0.4rem;
+	top: 0.09rem;
+}
+.mineList .icon{
+	width: 0.25rem;
+	height: 0.25rem;
+}
+.mineList .title{
+	font-size: 0.15rem;
+	margin-left: 0.2rem;
+}
+.mineList .right{
+	position: absolute;
+	right: 0.24rem;
+	font-size: 0.14rem;
+	color: #747474;
+}
+.mineList .right_txt{
+	position: absolute;
+	right: 0.24rem;
+	font-size: 0.15rem;
+	color: #747474;
+	letter-spacing: 1px;
+}
+
+/*moreChicang:持仓（更多）*/
+.moreChicang{
+	padding-bottom: 0.65rem;
+}
+
+/*moreTiaocang:调仓（更多）*/
+.moreTiaocang{
+	padding-bottom: 0.65rem;
+}
+
+/*min_messagesList:导师信息列表*/
+.min_messagesList{padding-bottom: 0.65rem;}
+.min_messagesList ul li{
+	border-radius: 0.08rem;
+	background-color: #fff;
+	font-family: "微软雅黑";
+	margin-bottom: 0.1rem;
+}
+.min_messagesList .row1{
+	padding: 0.13rem 0.12rem 0;
+}
+.min_messagesList .row1 .title{
+	font-size: 0.15rem;
+}
+.min_messagesList .row1 .time{
+	margin-top: 0.05rem!important;
+	font-size: 0.13rem;
+	color: #6D6D72;
+}
+.min_messagesList .row1 .stockName{
+	margin-top: 0.05rem!important;
+	font-size: 0.14rem;
+}
+.min_messagesList .row1 .stockCode{
+	margin-top: 0.05rem!important;
+	font-size: 0.14rem;
+}
+.min_messagesList .row1 .control{
+	margin-top: 0.05rem!important;
+	font-size: 0.14rem;
+}
+.min_messagesList .row2{
+	display: flex;
+	padding: 0.13rem 0.15rem 0.13rem 0.12rem;
+	justify-content: space-between;
+	align-items: center;
+}
+.min_messagesList .row2 span:nth-child(1){
+	color: #6D6D72;
+	font-size: 0.14rem;
+}
+.min_messagesList .row2 span:nth-child(2){
+	color: #6D6D72;
+	font-size: 0.13rem;
+	font-weight: bold;
+}
+.min_messagesList .row2:active{
+	background-color: #ccc;
+	color: #fff!important;
+}
+
+
+/*遮罩层LV1*/
+.ZZC1{
+	display: none;
+	position: fixed;
+	z-index: 3;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	background-color:rgba(10,10,10,0.8);
+}

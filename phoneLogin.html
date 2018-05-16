@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>股学堂</title>
+		<link href=" dist/plugins/mui/mui.min.css" rel="stylesheet" />
+		<link href="dist/styles/init.css" rel="stylesheet" />
+		<link href="dist/styles/global.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="phoneLogin">
+			<div class="title">手机号登录</div>
+			<div class="box">
+				<img src="dist/images/loginTitle.png" />
+				<input type="number" placeholder="请输入您的手机号码"/>
+				<button class="btn">获取短信验证码</button>
+			</div>
+		</div>
+		
+	<script src="dist/plugins/jquery-3.2.1.min.js"></script>
+	<script src="dist/plugins/mui/mui.min.js"></script>
+	<script src="dist/plugins/init.js"></script>
+	<script src="dist/js/global.js"></script>
+	<script>
+		/*页面初始化*/
+		initUI(window,function(){beforeInAnimation('left',500)});
+		
+		/*按钮点击获取验证码*/
+		$('button').click(function(){
+			                
+			alertTipBottom(
+				'成功发送验证消息',    //<消息内容>  
+				1200,    //<消息持续时间>                 
+				function(){href_beforeOutAnimation('message.html','left',500)}    //<消息消失后的回调函数>
+			);																	  	  
+		});
+	</script>
+	</body>
+</html>

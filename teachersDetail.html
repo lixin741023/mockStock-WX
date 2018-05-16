@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>导师操盘详情</title>
+		<link href=" dist/plugins/mui/mui.min.css" rel="stylesheet" />
+		<link href="dist/styles/init.css" rel="stylesheet" />
+		<link href="dist/styles/global.css" rel="stylesheet" />
+	</head>
+
+	<body>
+		<div class="teachersDetail">
+			<div class="teachersDetail_title">
+				<a href="teachers.html" class="mui-icon mui-icon-back"></a>
+				<span>令狐老师</span>
+			</div>
+			<div style="height: 0.4rem;"></div>
+			<div class="teachersDetail_info">
+				<div class="fourBlock">
+					<div class="fourBlock_info">
+						<span>&#12288总资产：</span><span>150000元</span>
+					</div>
+					<div class="fourBlock_info">
+						<span>可用资金：</span><span>100000元</span>
+					</div>
+				</div>
+				<div class="fourBlock">
+					<div class="fourBlock_info">
+						<span>股票市值：</span><span>80000元</span>
+					</div>
+					<div class="fourBlock_info">
+						<span>&#12288&#12288仓位：</span><span>40%</span>
+					</div>
+				</div>
+				<div class="income">
+					<div>总收益</div>
+					<p>85.26</p>%
+				</div>
+			</div>
+			<div class="ranking">
+				<div class="item1">
+					<span>日</span><span>+0.25%</span> 
+				</div>
+				<div class="item1">
+					<span>月</span><span>+9.25%</span> 
+				</div>
+				<div class="item2">
+					<div>收益排名</div>
+					<div>第1名</div>
+					<img src="dist/images/ranking_1.png" />
+				</div>
+			</div>
+			<div class="teachersDetail_inCome">
+				<img src="dist/images/inComeImg.png" />
+			</div>
+			<!--当前持仓-->
+			<div class="Chicang" id="Chicang-Symbol">
+				<div class="title">
+					<span>当前持仓</span>
+					<a class="stopHrefDefault" href="moreChicang.html">更多></a>
+				</div>
+				<ul style="padding: 0.1rem 0.1rem 0;">
+					<li class="ChicangList">
+						<p class="stockTitle">股市掘金(002500)</p>
+						<div class="row">
+							<div class="item">
+								<span>成本价</span>
+								<span>5:00</span>
+							</div>
+							<div class="item">
+								<span>持股</span>
+								<span>2000股</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="item">
+								<span>持仓占比</span>
+								<span>20%</span>
+							</div>
+							<div class="item">
+								<span>市值</span>
+								<span>15080元</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="item_last">
+								<span>盈亏</span>
+								<span class="up_number">+10000</span>
+								<div class="up_percent">+58.91%</div>
+							</div>
+						</div>
+					</li>
+					<li class="ChicangList">
+						<p class="stockTitle">股市掘金(002500)</p>
+						<div class="row">
+							<div class="item">
+								<span>成本价</span>
+								<span>5:00</span>
+							</div>
+							<div class="item">
+								<span>持股</span>
+								<span>2000股</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="item">
+								<span>持仓占比</span>
+								<span>20%</span>
+							</div>
+							<div class="item">
+								<span>市值</span>
+								<span>15080元</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="item_last">
+								<span>盈亏</span>
+								<span class="down_number">+10000</span>
+								<div class="down_percent">+58.91%</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!--最新调仓-->
+			<div class="Tiaocang" id="Tiaocang-Symbol">
+				<div class="title">
+					<span>最新调仓</span>
+					<a class="stopHrefDefault" href="moreTiaocang.html">更多></a>
+				</div>
+				<ul style="padding: 0.1rem 0.1rem 0;">
+					<li class="TiaocangList">
+						<div class="model model_buy">买</div>
+						<p class="stockTitle">股市掘金(002500)</p>
+						<div class="row">
+							<div class="item">
+								<span>成交数量</span>
+								<span>50124股</span>
+							</div>
+							<div class="item">
+								<span>成交价格</span>
+								<span>12.18元</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="item_last">
+								<span>仓位变化</span>
+								<span>20%</span>
+								<div class="change_buy">
+									<span class="mui-icon mui-icon-arrowthinright"></span>
+									50%
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="TiaocangList">
+						<div class="model model_sell">卖</div>
+						<p class="stockTitle">股市掘金(002500)</p>
+						<div class="row">
+							<div class="item">
+								<span>成交数量</span>
+								<span>50124股</span>
+							</div>
+							<div class="item">
+								<span>成交价格</span>
+								<span>12.18元</span>
+							</div>
+						</div>
+						<div class="row">
+							<div class="item_last">
+								<span>仓位变化</span>
+								<span>20%</span>
+								<div class="change_sell">
+									<span class="mui-icon mui-icon-arrowthinright"></span>
+									50%
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<!--老师点评-->
+			<div class="teacherComment">
+				<div class="title">
+					<span>老师点评</span>
+				</div>
+				<ul>
+					<li class="teacherCommentList">
+						<div class="info">
+							<img src="dist/onload/images/teacherCommentImg.jpg"/>
+							<div>
+								<span>令狐老师</span>
+								<span>04-17 15:30</span>
+							</div>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quibusdam suscipit magni sunt nisi error delectus officiis perferendis porro numquam. Ipsa placeat voluptas assumenda quasi numquam hic praesentium repellendus maiores.
+						</p>
+					</li>
+					<li class="teacherCommentList">
+						<div class="info">
+							<img src="dist/onload/images/teacherCommentImg.jpg"/>
+							<div>
+								<span>令狐老师</span>
+								<span>04-17 15:30</span>
+							</div>
+						</div>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam quibusdam suscipit magni sunt nisi error delectus officiis perferendis porro numquam. Ipsa placeat voluptas assumenda quasi numquam hic praesentium repellendus maiores.
+						</p>
+					</li>
+				</ul>
+			</div>
+		
+		</div>
+
+		<script src="dist/plugins/jquery-3.2.1.min.js"></script>
+		<script src="dist/plugins/mui/mui.min.js"></script>
+		<script src="dist/plugins/init.js"></script>
+		<script src="dist/js/global.js"></script>
+		<script>
+			/*页面初始化*/
+			initUI(window,function(){beforeInAnimation('left',400)});
+		</script>
+	</body>
+
+</html>

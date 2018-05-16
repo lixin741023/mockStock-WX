@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title>短信验证</title>
+		<link href=" dist/plugins/mui/mui.min.css" rel="stylesheet" />
+		<link href="dist/styles/init.css" rel="stylesheet" />
+		<link href="dist/styles/global.css" rel="stylesheet" />
+	</head>
+	<body>
+		<div class="message">
+			<div class="messageList">
+				<div class="shadow"></div>
+				<input type="number" maxlength="1" />
+				<input type="number" maxlength="1" />
+				<input type="number" maxlength="1" />
+				<input type="number" maxlength="1" />
+				<input type="number" maxlength="1" />
+				<input type="number" maxlength="1" />
+			</div>
+			<div class="box">
+				<p class="tip">请输入短信验证码</p>
+				<button v-show="btnCD" class="btn btnCD">{{btnCD}}后可重新获取</button>
+				<button v-show="!btnCD" class="btn" @click="getCheckCode()">获取验证码</button>
+			</div>
+		</div>
+		<div class="checking">
+			<img src="dist/images/Loading.gif" />
+		</div>
+	<script src="dist/plugins/jquery-3.2.1.min.js"></script>
+	<script src="dist/plugins/mui/mui.min.js"></script>
+	<script src="dist/plugins/init.js"></script>
+	<script src="dist/plugins/vue.min.js"></script>
+	<script src="dist/js/global.js"></script>
+	<script>
+		/*页面初始化*/
+		initUI(window,function(){beforeInAnimation('right',500)});
+		
+		/*new实例*/
+		new Vue({
+			data:{
+				btnCD:5,    //<设置获取验证码的冷却时间>
+				btnBest:0
+			},
+			methods:{
+				getCheckCode:function(){
+					this.btnCD=this.btnBest;
+					this.getCheckCodeCD();
+					startCheckCode();//开始获取验证码
+				},
+				getCheckCodeCD:function(){
+					let this_=this;
+					let IntervalTime=setInterval(function(){
+						this_.btnCD--;
+						this_.btnCD==0&&clearInterval(IntervalTime);
+					},1000);
+				}
+			},
+			mounted:function(){
+				this.btnBest=this.btnCD;
+				this.getCheckCodeCD();
+			}
+		}).$mount('.message');
+		function startCheckCode(){//<开始获取验证码>
+			
+			alert('开始获取验证码');
+			alertTipBottom('第二次获取验证码',1500);
+		};
+/******************************************************************************************************/		
+		let inputList=$('input[type=number]');
+		let focus=0;
+		inputList[focus].focus();
+		$(inputList).on('keydown',focusControl);
+		$(inputList).on('click',focusClick);
+		
+		function startCheck(){//<开始检查验证码>
+			let userMessage='';
+			for(let i=0; i<inputList.length; i++){
+				userMessage+=$(inputList[i]).val();
+			};
+			console.log(userMessage);/*提取到->客户输入的验证码*/
+
+			//以下模拟验证通过：
+			setTimeout(function(){
+				checkingLoading_close();//<关闭检查验证码的动画>
+				alertTipBottom('验证成功',700,function(){href_beforeOutAnimation('teachers.html','left')})
+			},2000)
+		};
+	</script>
+	</body>
+</html>

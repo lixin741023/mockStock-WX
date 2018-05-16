@@ -1,0 +1,102 @@
+body{
+	min-width: 360px!important;
+	max-width: 1024px!important;
+	font-family: "微软雅黑";
+	margin: 0 auto!important;
+	/*border: 1px solid fuchsia;*/
+	line-height: normal;
+	opacity: 0;
+	position: relative;
+}
+p{
+	margin: 0!important;
+	letter-spacing: 1px;
+	line-height: normal;
+	color: inherit;
+}
+h1,h2,h3,h4,h5,h6{
+	margin: 0!important;
+}
+input{
+	margin: 0!important;
+	padding: 0!important;
+	height: auto!important;
+	line-height: normal!important;
+}
+ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+/*底部导航*/
+.appBottomNav{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	min-width: 360px;
+	max-width: 1024px;
+	z-index: 5;
+	margin: 0;
+	padding: 0.09rem 0 0.045rem 0;
+	background-color: #e9e9e9;
+}
+.appBottomNav_Active{
+	color: #cd402e!important;
+	/*color: #0FAEF0!important;*/
+}
+.icon-bold{font-weight: bold;}
+.appBottomNav a{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	list-style: none;
+	font-size: 0.1rem;
+	color: #7d7d7d;
+}
+.appBottomNav a div{
+	font-size: 0.25rem;
+}
+.appBottomNav a article{
+	font-size: 0.13rem;
+}
+.newMessageTip{
+	position: absolute;
+	width: 0.17rem;
+	height: 0.17rem;
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	color: #fff;
+	font-size: 0.1rem!important;
+	display: flex;
+	left: 0.65rem;
+	top: -0.035rem;
+	background-color: #cd142d;
+}
+/*底部导航的填充*/
+.appBottomNav_HOLD{
+	visibility: hidden;
+	width: 100%;
+	min-width: 360px;
+	max-width: 1024px;
+	margin: 0;
+	padding: 0.09rem 0 0.045rem 0;
+	background-color: #e9e9e9;
+}
+.icon-bold{font-weight: bold;}
+.appBottomNav_HOLD a{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	list-style: none;
+	font-size: 0.1rem;
+	color: #7d7d7d;
+}
+.appBottomNav_HOLD a div{
+	font-size: 0.25rem;
+}
+.appBottomNav_HOLD a article{
+	font-size: 0.13rem;
+}
