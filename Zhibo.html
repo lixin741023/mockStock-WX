@@ -3,18 +3,58 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<title>在线直播</title>
+		<title>图文直播</title>
 		<link href=" dist/plugins/mui/mui.min.css" rel="stylesheet" />
 		<link href="dist/styles/init.css" rel="stylesheet" />
 		<link href="dist/styles/global.css" rel="stylesheet" />
 	</head>
 	<body>
 		
-		<div style="display: flex; justify-content: center; align-items: center; margin-top: 0.5rem;">
-			<img src="dist/images/ZhiboWaiting.png" />
+		<div class="Zhibo">
+			<div class="nav">老师列表</div>
+			<ul>
+				<li>
+					<div class="ing">正在直播</div>
+					<img src="dist/onload/images/Zhibo_img.jpg"/>
+					<span>达摩</span>
+				</li>
+				<li>
+					<div class="ing">正在直播</div>
+					<img src="dist/onload/images/Zhibo_img.jpg"/>
+					<span>金阳</span>
+				</li>
+				<li>
+					<img src="dist/onload/images/Zhibo_img.jpg"/>
+					<span>红阳</span>
+				</li>
+				<li>
+					<img src="dist/onload/images/Zhibo_img.jpg"/>
+					<span>木子易</span>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<img src="dist/onload/images/Zhibo_img.jpg"/>
+					<span>有道</span>
+				</li>
+				<li>
+					<div class="ing">正在直播</div>
+					<img src="dist/onload/images/Zhibo_img.jpg"/>
+					<span>红尘</span>
+				</li>
+				<li>
+					<img src="dist/onload/images/Zhibo_img.jpg"/>
+					<span>诸葛</span>
+				</li>
+				<li>
+					<div class="ing">正在直播</div>
+					<img src="dist/onload/images/Zhibo_img.jpg"/>
+					<span>琥珀</span>
+				</li>
+			</ul>
 		</div>
-		111
-		
+
+
 		<ul class="appBottomNav_HOLD mui-row">
 			<a href="teachers.html" class="mui-col-xs-4 ">
 				<div class="mui-icon mui-icon-pengyouquan"></div>
@@ -54,6 +94,12 @@
 	<script>
 		/*页面初始化*/
 		initUI(window,function(){beforeInAnimation('none')});
+		
+		/*列表点击->进入老师直播详情*/
+		$('li').on('click',function(){
+			this.style.backgroundColor='#ccc';
+			href_beforeOutAnimation('ZhiboDetail.html','left',400);
+		});
 	</script>
 	</body>
 </html>

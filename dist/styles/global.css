@@ -632,6 +632,105 @@
 	color: #fff!important;
 }
 
+/*直播*/
+.Zhibo{
+	
+}
+.Zhibo .nav{
+	padding: 0.1rem 0.15rem;
+	font-size: 0.18rem;
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+}
+.Zhibo ul{
+	margin-top: 0.4rem;
+	display: flex;
+	justify-content: space-between;
+	padding: 0 0.25rem;
+}
+.Zhibo ul li{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.Zhibo ul li:last-child{
+	margin-right: 0;
+}
+.Zhibo ul li .ing{
+	top: -0.2rem;
+	position: absolute;
+	width: 0.53rem;
+	background-color: #ee672D;
+	color: #fff;
+	font-size: 0.1rem;
+	padding: 1px;
+	text-align: center;
+}
+.Zhibo ul li img{
+	width: 0.6rem;
+	height: 0.6rem;
+	border-radius: 50%;
+}
+.Zhibo ul li span{
+	margin-top: 5px;
+	font-size: 0.14rem;
+}
+
+/*直播详情*/
+.ZhiboList{
+	padding: 0.17rem 0.2rem;
+	border-bottom: 0.05rem solid #D3D3D3;
+}
+.ZhiboList .info{
+	display: flex;
+}
+.ZhiboList .info img{
+	width: 0.45rem;
+	height: 0.45rem;
+	border-radius: 50%;
+}
+.ZhiboList .info div{
+	margin-left: 0.1rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+.ZhiboList .info div span:nth-child(1){
+	font-size: 0.14rem;
+	font-weight: bold;
+}
+.ZhiboList .info div span:nth-child(2){
+	font-size: 0.11rem;
+	color: #969696;
+	font-weight: bold;
+}
+.ZhiboList h3{
+	font-size: 0.18rem;
+	margin-top: 0.1rem!important;
+	margin-bottom: 0.1rem!important;
+}
+.ZhiboList .ZhiboContent{
+	text-indent: 0.25rem;
+	line-height: 0.19rem;
+	font-size: 0.125rem;
+	letter-spacing: 1px;
+}
+.ZhiboList .read{
+	margin-left: 0.8rem!important;
+	font-size: 0.1rem;
+	color: #b9b7b8;
+}
+.ZhiboContent_img{
+	text-indent: 0;
+	text-align: center;
+	margin: 5px 0;
+}
+.ZhiboContent_img img{
+	width: 100%;
+	height: 100%;
+} 
 
 /*遮罩层LV1*/
 .ZZC1{
