@@ -1,109 +1,122 @@
 <!DOCTYPE html>
-<html>
+<html style="height: 100%;">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title>图文直播</title>
 		<link href=" dist/plugins/mui/mui.min.css" rel="stylesheet" />
-		<!--<link href="dist/styles/init.css" rel="stylesheet" />-->
+		<link href="dist/styles/init.css" rel="stylesheet" />
 		<link href="dist/styles/global.css" rel="stylesheet" />
+		<style>
+		</style>
 	</head>
-	<body>
-		<div class="ZhiboDetail" style="display: none;">
-			<div class="teachersDetail_title">
+
+	<body style="height: 100%;">
+		
+		<div class="ZhiboDetail">
+			<div class="teachersDetail_title" >
 				<a href="Zhibo.html" class="mui-icon mui-icon-arrowthinleft" style="font-weight: bold;"></a>
 				<span>令狐老师</span>
 			</div>
 			<div style="height: 0.4rem;"></div>
-			<ul class="lxtest">
-				<li class="ZhiboList">
-					<div class="info">
-						<img src="dist/onload/images/Zhibo_img.jpg"/>
-						<div>
-							<span>令狐老师</span>
-							<span>04-17 15:30</span>
-						</div>
-						<div class="read">已阅读：12059次</div>
-					</div>
-					<h3>【项目标题项目标题项目标题项目标题】</h3><!--16字-->
-					<div class="ZhiboContent">
-						gitHub是一个面向开源及私有软件项目的托管平台，因为只支持git 作为唯一的版本库格式进行托管，故名gitHub。
-						gitHub于2008年4月10日正式上线，除了git代码仓库托管及基本的 Web管理界面以外，还提供了订阅、讨论组、文本渲染、在线文件编辑
-					</div>
-				</li>
-				<li class="ZhiboList">
-					<div class="info">
-						<img src="dist/onload/images/Zhibo_img.jpg"/>
-						<div>
-							<span>令狐老师</span>
-							<span>04-17 15:30</span>
-						</div>
-						<div class="read">已阅读：12059次</div>
-					</div>
-					<h3>【项目标题项目标题项目标题项目标题】</h3><!--16字-->
-					<div class="ZhiboContent">
-						gitHub是一个面向开源及私有软件项目的托管平台，因为只支持git 作为唯一的版本库格式进行托管，故名gitHub。
-						<div class="ZhiboContent_img">
-							<img src="dist/onload/images/ZhiboContent.png" />
-						</div>
-						gitHub于2008年4月10日正式上线，除了git代码仓库托管及基本的 Web管理界面以外，还提供了订阅、讨论组、文本渲染、在线文件编辑
-					</div>
-				</li>
-				<li class="ZhiboList">
-					<div class="info">
-						<img src="dist/onload/images/Zhibo_img.jpg"/>
-						<div>
-							<span>令狐老师</span>
-							<span>04-17 15:30</span>
-						</div>
-						<div class="read">已阅读：12059次</div>
-					</div>
-					<h3>【项目标题项目标题项目标题项目标题】</h3><!--16字-->
-					<div class="ZhiboContent">
-						gitHub是一个面向开源及私有软件项目的托管平台，因为只支持git 作为唯一的版本库格式进行托管，故名gitHub。
-						gitHub于2008年4月10日正式上线，除了git代码仓库托管及基本的 Web管理界面以外，还提供了订阅、讨论组、文本渲染、在线文件编辑
-					</div>
-				</li>
-			</ul>
+			<!--下拉刷新容器-->
+			<div id="refreshContainer" class="mui-content mui-scroll-wrapper" style="top: 0.4rem;">
+				<div class="mui-scroll">
+					<!--数据列表-->
+					<ul class="mui-table-view mui-table-view-chevron">
+						<li class="ZhiboList">
+							<div class="info">
+								<img src="dist/onload/images/Zhibo_img.jpg" />
+								<div>
+									<span>令狐老师</span>
+									<span>04-17 15:30</span>
+								</div>
+								<div class="read">已阅读：12059次</div>
+							</div>
+							<h3>【项目标题项目标题项目标题项目标题】</h3>
+							<!--16字-->
+							<div class="ZhiboContent">
+								gitHub是一个面向开源及私有软件项目的托管平台，因为只支持git 作为唯一的版本库格式进行托管，故名gitHub。 gitHub于2008年4月10日正式上线，除了git代码仓库托管及基本的 Web管理界面以外，还提供了订阅、讨论组、文本渲染、在线文件编辑
+							</div>
+						</li>
+						<li class="ZhiboList">
+							<div class="info">
+								<img src="dist/onload/images/Zhibo_img.jpg" />
+								<div>
+									<span>令狐老师</span>
+									<span>04-17 15:30</span>
+								</div>
+								<div class="read">已阅读：12059次</div>
+							</div>
+							<h3>【项目标题项目标题项目标题项目标题】</h3>
+							<!--16字-->
+							<div class="ZhiboContent">
+								gitHub是一个面向开源及私有软件项目的托管平台，因为只支持git 作为唯一的版本库格式进行托管，故名gitHub。 gitHub于2008年4月10日正式上线，除了git代码仓库托管及基本的 Web管理界面以外，还提供了订阅、讨论组、文本渲染、在线文件编辑
+							</div>
+						</li>
+						<li class="ZhiboList">
+							<div class="info">
+								<img src="dist/onload/images/Zhibo_img.jpg" />
+								<div>
+									<span>令狐老师</span>
+									<span>04-17 15:30</span>
+								</div>
+								<div class="read">已阅读：12059次</div>
+							</div>
+							<h3>【项目标题项目标题项目标题项目标题】</h3>
+							<!--16字-->
+							<div class="ZhiboContent">
+								gitHub是一个面向开源及私有软件项目的托管平台，因为只支持git 作为唯一的版本库格式进行托管，故名gitHub。 gitHub于2008年4月10日正式上线，除了git代码仓库托管及基本的 Web管理界面以外，还提供了订阅、讨论组、文本渲染、在线文件编辑
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
-	
-	<!--下拉刷新容器-->
-<div id="refreshContainer" class="mui-content mui-scroll-wrapper">
-  <div class="mui-scroll">
-    <!--数据列表-->
-    <ul class="mui-table-view mui-table-view-chevron">
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-      <li>1</li>
-    </ul>
-  </div>
-</div>
 
-	<script src="dist/plugins/jquery-3.2.1.min.js"></script>
-	<script src="dist/plugins/mui/mui.min.js"></script>
-	<script src="dist/plugins/init.js"></script>
-	<script src="dist/js/global.js"></script>
-	<script>
-		/*页面初始化*/
-		initUI(window,function(){beforeInAnimation('left',500)});
-		
-		mui.init({
-  pullRefresh : {
-    container:"#refreshContainer",//下拉刷新容器标识，querySelector能定位的css选择器均可，比如：id、.class等
-    down : {
-      height:50,//可选,默认50.触发下拉刷新拖动距离,
-      auto: false,//可选,默认false.首次加载自动下拉刷新一次
-      contentdown : "下拉可以刷新",//可选，在下拉可刷新状态时，下拉刷新控件上显示的标题内容
-      contentover : "释放立即刷新",//可选，在释放可刷新状态时，下拉刷新控件上显示的标题内容
-      contentrefresh : "正在刷新...",//可选，正在刷新状态时，下拉刷新控件上显示的标题内容
-      callback :function(){
-      	alert(1)
-     this.endPulldown(true);
-      } //必选，刷新函数，根据具体业务来编写，比如通过ajax从服务器获取新数据；
-    }
-  }
-});
-	</script>
+		<script src="dist/plugins/jquery-3.2.1.min.js"></script>
+		<script src="dist/plugins/mui/mui.min.js"></script>
+		<script src="dist/plugins/init.js"></script>
+		<script src="dist/js/global.js"></script>
+		<script>
+			/*页面初始化*/
+			initUI(window, function() {
+				beforeInAnimation('left', 500)
+			});
+
+			mui.init({
+				pullRefresh: {
+					container: "#refreshContainer",
+					down: {
+						height: 60,
+						auto: false,
+						contentdown: contentdown(),
+						contentover: "松开释放",
+						contentrefresh: "正在加载……",
+						callback: function pullfresh() {
+							//开始请求数据
+							alert(1)
+							mui('#refreshContainer').pullRefresh().endPulldownToRefresh();
+						}
+					}
+				}
+			});
+			
+			
+			
+			function contentdown(){
+				let txt='';
+				let num=Math.random().toFixed(1);
+				if(num>=0.3&&num<=0.6){
+					txt='人生无非是拉拉扯扯';
+				}else if(num>0.6){
+					txt='淡定人生'
+				}else{
+					txt='下拉加载'
+				};
+				return txt;
+			};
+		</script>
 	</body>
+
 </html>
